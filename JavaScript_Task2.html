@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Task2</title>
+</head>
+
+<body>
+    <script>
+        function sortString(inputString) {
+            let charArray = inputString.split('');
+            let sortedArray = charArray.sort();
+            let sortedString = sortedArray.join('');
+            alert(`Example string:  ${inputString}  ,Expected Output:  ${sortedString} `);
+        }
+        const input = "webmaster";
+        sortString(input);
+
+    </script>
+</body>
+
+</html>

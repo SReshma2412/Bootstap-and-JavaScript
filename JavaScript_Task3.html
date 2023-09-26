@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Task3</title>
+    <style>
+        button:hover {
+            border: 2px solid rgb(6, 154, 240);
+
+        }
+
+        button {
+
+            background: rgb(201, 199, 199);
+            border-radius: 2px;
+        }
+
+        .design {
+            border: 1px solid black;
+            padding-left: 10px;
+            padding-top: 8px;
+            width: 60%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        .label1 {
+            margin-right: 5px;
+        }
+    </style>
+
+</head>
+
+<body class="design">
+    <div>
+        <label class="label1">1st Number:</label>
+        <input type="text" id="i1" /><br>
+        <label>2nd Number:</label>
+        <input type="text" id="i2" /><br>
+        <button onclick="Multiply() ">Multiply</button>
+        <button onclick="Divide()">Divide</button>
+        <p id="i3"> The Result Is: </p>
+    </div>
+    <script>
+
+        function Multiply() {
+            var i1 = document.getElementById("i1").value;
+            var a = Number.parseInt(i1);
+            var i2 = document.getElementById("i2").value;
+            var b = Number.parseInt(i2);
+            var mul = a * b;
+            document.getElementById("i3").innerHTML = "The Result Is:<br> " + mul;
+        }
+        function Divide() {
+            var i1 = document.getElementById("i1").value;
+            var a = Number.parseInt(i1);
+            var i2 = document.getElementById("i2").value;
+            var b = Number.parseInt(i2);
+            var div = a / b;
+            document.getElementById("i3").innerHTML = "The Result Is:<br> " + div;
+        }
+    </script>
+</body>
+
+</html>

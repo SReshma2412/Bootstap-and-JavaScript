@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Task1</title>
+</head>
+
+<body>
+    <script>
+        function reverseNumber(num) {
+            let numberString = num.toString();
+            let reversedString = numberString.split('').reverse().join('');
+            let reversedNumber = parseInt(reversedString);
+            alert(`Example: ${num} , Expected Output: ${reversedNumber}`);
+        }
+        const originalNumber = 32243;
+        reverseNumber(originalNumber);
+    </script>
+</body>
+
+</html>

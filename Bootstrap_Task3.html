@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap_Task3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style>
+        #btn {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " style="box-shadow: 1px 1px 3px #dee3e0 ;  position: sticky;
+    top: 0px">
+        <div class="container-fluid well">
+            <a class="navbar-brand ms-3" href="#">
+                Company name
+            </a>
+
+
+            <div class="collapse navbar-collapse justify-content-end" id="demo">
+                <a class="nav-link text-dark" href="#">Features</a>
+                <a class="nav-link text-dark" href="#">Enterprise</a>
+                <a class="nav-link text-dark" href="#">Support</a>
+                <a class="nav-link text-dark" href="#">Pricing</a>
+
+            </div>
+            <button class="btn btn-outline-primary text-center" type="submit">Sign up</button>
+
+        </div>
+
+    </nav>
+
+    <main class="container mt-5">
+        <h1 class="text-center">Pricing</h1>
+        <p class="text-center">Quickly build an effective pricing table for your potential customers with this <br>
+            Bootstrap example .It's
+            built with default Bootstrap components and utilities <br>with little customization.</p>
+        <div class="row">
+
+
+            <div class="col-md-12 col-lg-3 m-4">
+                <div class="card">
+                    <div class="card-header text-center ">
+                        <h3> Free</h3>
+                    </div>
+                    <div class="card-body">
+
+                        <h1 class="card-title text-center">$0 <i class="text-muted">/mo</i></h1>
+                        <p class="card-text  text-center">10 users included <br>2 GB of storage <br> Email support <br>
+                            Help center access</p>
+                        <button class=" btn btn-outline-primary " id="btn">Sign up for free</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-12 col-lg-3 m-4">
+                <div class="card">
+                    <div class="card-header text-center ">
+                        <h3> Pro</h3>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title text-center">$15 <i class="text-muted">/mo</i></h1>
+                        <p class="card-text  text-center">20 users included <br>10 GB of storage <br>Priority email
+                            support <br>
+                            Help center access</p>
+
+                        <button class="btn btn-primary text-center " id="btn"> Get started</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12 col-lg-3 m-4">
+                <div class="card">
+                    <div class="card-header text-center ">
+                        <h3> Enterprise</h3>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title text-center">$29 <i class="text-muted">/mo</i></h1>
+                        <p class="card-text  text-center">30 users included <br>15 GB of storage <br>Phone and email
+                            support <br>
+                            Help center access</p>
+                        <button class="btn btn-primary text-center " id="btn">Contact us</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAETklEQVR4AY2XA7AsSRBFT1bVYG3btm3btm3btgPL0Nq2bdvefXZPV/6HmVcxrfknIhujW5WTagG4anqdRdRfCLIhMANQUkBRFII17jX7PZKfTd9HqvzrVZ4y5ehU4G+5dmadwUf6DjA3dVqJU/R+wXto0/0PUotWNFrzF6bFgwHhaqLEkyikxVGYt+ZKFzhV2YoUStaCPJoSpOlawn2uBUR1awdMX+R6X5cNG/HZ7kVQfLhGUp4jGSfCjA4QMlYXxDxe/fhCVLP/a0TqdwKYuoGq5MYFIC4hmXC34ok58qsqk80g5NHfofT+5/nmhYjXbhqg42dBxAIjBoqQhQKmOOo93tewJQqZZGph+vktqx5Y5Zg3p2LpXYRYI1Q9oxQErVHy8ap11wfeubObF6/uGLbOUXvrtm6+fXkAHzNKqSpsf82UzLgYxFrDE6eCFgKuVVqFkBMAXr6+g/++rTtPDKo6KjLt/HDE47MxxYwW42C1gyrcf8QAikUIJHVMq5wHTzOCiMNKFUsVJyNW4f/vhGeuaKPB7EuVUrsP1wGXlM5OsYCIweCwlBCx9RQ1GPH89XVEg6F+TfhOCYTfdkXlNhtpMgW0fp55wTINfnhzIIgVmKNluW3G44mJEWqINipFjblWdGx4wtQA9LXHPH9tN0qFUC2FlFbwQL4lWeuwKYYFQDCAMMnUhpkWmZS5VywD0PZrxC27/Elfmw3hl1dpwwKyS2a4Cqy055Tk8ftngzx0zj/88WWEwY7/NeRuSjHjl0pByQx0/B7x/0/BettClsy2eIXD7p2Dk16enenmsXjiRChrajEmCGavMMlN2/zJBcv8zoXL/M0Fw3bafL9x3Mw/cc1mv/H5cz0AzD68kMMfnp7q1J5YYxTNbWImy/XFcWCwUsJJeTT/S1TRwQo/vB5z045/8c1rfQBMO4djtf0mwRPj0dwZwRRNMVmICILDUMZKBUMFO2xGKogv8c49PTRYeJ0yigd8fhoW5Xy2B2TMxGDUgSggWFW8xET9GprUVKbpN7IC3rQesbJRr3g08VlhgdUnCQH7R5z8hWTAp+tA1liiGYVIqSEaZgZKNdbcp8qqu4c0/ezZ/pCKORtzCcGWvWCTk6emv1PHCxHA5DMaZlvCjQZegz++GuKNu3qBCoyPZxLkCnsBAUGAwDLbTE4rfnyvn1v2/IfaoMNiASFPx+XUvKb5rq/NU4SPla5/Y377dJAPH+3l4yf6IC5jKIHYMKgqKRyFPUAQLJct305MDa9KCDtJTM4Q5r8qFodICcEE8ZxeoIpKOhIkDB8A6jBoOpBS96D1aUnG3S85G1R14P8GmZnMOBAEUy88FmTiHsmkLjqG5DY5D386FXlQlUO0oPCIGkxWdUzcS2LxirZocvKAsYOls4CfinqBIk1G2F2w5OdaN7kfSrGebX6X7n+tKa2qyg0KfynQekaguHIWP5L9qch1cWRWHfTm/wkRpnafkhoYMwAAAABJRU5ErkJggg=="
+                    alt="bootstrap-logo">
+                <p>&copy;2017</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

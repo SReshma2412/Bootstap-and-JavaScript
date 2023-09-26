@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript_Task7</title>
+
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+        }
+
+        button {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+
+
+        #startButton {
+
+            margin: 0;
+            position: absolute;
+            top: 36%;
+            left: 46%;
+            margin-top: 200px;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            color: black;
+        }
+
+        #stopButton {
+
+            color: black;
+            margin: 0;
+            position: absolute;
+            top: 36%;
+            left: 50%;
+            margin-top: 200px;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            text-align: center;
+            color:#3c5199;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <img id="trainGif" src="https://clipart-library.com/images/yckKxM5Ri.gif" alt="Train GIF">
+    </div>
+    <h1>Click the following buttons to handle animation</h1>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+
+    <script>
+
+        let animationInterval;
+        let position = 0;
+
+        document.getElementById('startButton').addEventListener('click', function () {
+            const trainGif = document.getElementById('trainGif');
+            trainGif.style.display = 'block';
+
+            if (!animationInterval) {
+                animationInterval = setInterval(() => {
+                    position += 2;
+                    trainGif.style.marginLeft = position + 'px';
+                }, 100);
+            }
+        });
+
+        document.getElementById('stopButton').addEventListener('click', function () {
+            clearInterval(animationInterval);
+            animationInterval = null;
+        });
+
+
+    </script>
+</body>
+
+</html>
